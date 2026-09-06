@@ -1,0 +1,3 @@
+department_code,task_type,title,description,priority,estimated_duration_minutes,required_block_type,periodic_frequency,source_system
+SNT,Signal Interlocking Test,Signal Maintenance Junction MAS,Interlocking testing on line 1,HIGH,120,TRAFFIC_BLOCK,MONTHLY,SMMS
+ENGG,Rail Replacement,Track Rail Replacement KM 10-15,Deep screening and rail renewal,CRITICAL,300,INTEGRATED_BLOCK,AD_HOC,MANUAL

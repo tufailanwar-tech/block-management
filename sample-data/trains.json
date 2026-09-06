@@ -1,0 +1,20 @@
+[
+  {
+    "trainNumber": "22625",
+    "trainName": "Double Decker Express",
+    "trainType": "PASSENGER_EXPRESS",
+    "priorityLevel": 2,
+    "originStation": "MAS",
+    "destinationStation": "SBC",
+    "sourceSystem": "COA"
+  },
+  {
+    "trainNumber": "12245",
+    "trainName": "Howrah Duronto Express",
+    "trainType": "PASSENGER_EXPRESS",
+    "priorityLevel": 1,
+    "originStation": "HWH",
+    "destinationStation": "YPR",
+    "sourceSystem": "TMS"
+  }
+]

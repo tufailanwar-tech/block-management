@@ -1,0 +1,4 @@
+train_number,train_name,train_type,priority_level,origin_station,destination_station,source_system
+12639,Brindavan Express,PASSENGER_EXPRESS,2,SBC,MAS,COA
+12801,Purushottam Express,PASSENGER_EXPRESS,1,PURI,NDLS,TMS
+FREIGHT-9012,Container Freight Special,FREIGHT,4,MAS,ADI,TDMS

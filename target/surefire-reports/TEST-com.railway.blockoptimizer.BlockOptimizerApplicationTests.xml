@@ -1,0 +1,746 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.railway.blockoptimizer.BlockOptimizerApplicationTests" time="13.921" tests="1" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="24"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="E:\Desktop\ps-27\target\test-classes;E:\Desktop\ps-27\target\classes;C:\Users\Dell\.m2\repository\org\springframework\boot\spring-boot-starter-web\3.3.3\spring-boot-starter-web-3.3.3.jar;C:\Users\Dell\.m2\repository\org\springframework\boot\spring-boot-starter\3.3.3\spring-boot-starter-3.3.3.jar;C:\Users\Dell\.m2\repository\org\springframework\boot\spring-boot\3.3.3\spring-boot-3.3.3.jar;C:\Users\Dell\.m2\repository\org\springframework\boot\spring-boot-autoconfigure\3.3.3\spring-boot-autoconfigure-3.3.3.jar;C:\Users\Dell\.m2\repository\org\springframework\boot\spring-boot-starter-logging\3.3.3\spring-boot-starter-logging-3.3.3.jar;C:\Users\Dell\.m2\repository\ch\qos\logback\logback-classic\1.5.7\logback-classic-1.5.7.jar;C:\Users\Dell\.m2\repository\ch\qos\logback\logback-core\1.5.7\logback-core-1.5.7.jar;C:\Users\Dell\.m2\repository\org\apache\logging\log4j\log4j-to-slf4j\2.23.1\log4j-to-slf4j-2.23.1.jar;C:\Users\Dell\.m2\repository\org\apache\logging\log4j\log4j-api\2.23.1\log4j-api-2.23.1.jar;C:\Users\Dell\.m2\repository\org\slf4j\jul-to-slf4j\2.0.16\jul-to-slf4j-2.0.16.jar;C:\Users\Dell\.m2\repository\jakarta\annotation\jakarta.annotation-api\2.1.1\jakarta.annotation-api-2.1.1.jar;C:\Users\Dell\.m2\repository\org\yaml\snakeyaml\2.2\snakeyaml-2.2.jar;C:\Users\Dell\.m2\repository\org\springframework\boot\spring-boot-starter-json\3.3.3\spring-boot-starter-json-3.3.3.jar;C:\Users\Dell\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.17.2\jackson-datatype-jdk8-2.17.2.jar;C:\Users\Dell\.m2\repository\com\fasterxml\jackson\module\jackson-module-parameter-names\2.17.2\jackson-module-parameter-names-2.17.2.jar;C:\Users\Dell\.m2\repository\org\springframework\boot\spring-boot-starter-tomcat\3.3.3\spring-boot-starter-tomcat-3.3.3.jar;C:\Users\Dell\.m2\repository\org\apache\tomcat\embed\tomcat-embed-core\10.1.28\tomcat-embed-core-10.1.28.jar;C:\Users\Dell\.m2\repository\org\apache\tomcat\embed\tomcat-embed-websocket\10.1.28\tomcat-embed-websocket-10.1.28.jar;C:\Users\Dell\.m2\repository\org\springframework\spring-web\6.1.12\spring-web-6.1.12.jar;C:\Users\Dell\.m2\repository\org\springframework\spring-beans\6.1.12\spring-beans-6.1.12.jar;C:\Users\Dell\.m2\repository\io\micrometer\micrometer-observation\1.13.3\micrometer-observation-1.13.3.jar;C:\Users\Dell\.m2\repository\io\micrometer\micrometer-commons\1.13.3\micrometer-commons-1.13.3.jar;C:\Users\Dell\.m2\repository\org\springframework\spring-webmvc\6.1.12\spring-webmvc-6.1.12.jar;C:\Users\Dell\.m2\repository\org\springframework\spring-context\6.1.12\spring-context-6.1.12.jar;C:\Users\Dell\.m2\repository\org\springframework\spring-expression\6.1.12\spring-expression-6.1.12.jar;C:\Users\Dell\.m2\repository\org\springframework\boot\spring-boot-starter-data-jpa\3.3.3\spring-boot-starter-data-jpa-3.3.3.jar;C:\Users\Dell\.m2\repository\org\springframework\boot\spring-boot-starter-aop\3.3.3\spring-boot-starter-aop-3.3.3.jar;C:\Users\Dell\.m2\repository\org\aspectj\aspectjweaver\1.9.22.1\aspectjweaver-1.9.22.1.jar;C:\Users\Dell\.m2\repository\org\springframework\boot\spring-boot-starter-jdbc\3.3.3\spring-boot-starter-jdbc-3.3.3.jar;C:\Users\Dell\.m2\repository\com\zaxxer\HikariCP\5.1.0\HikariCP-5.1.0.jar;C:\Users\Dell\.m2\repository\org\springframework\spring-jdbc\6.1.12\spring-jdbc-6.1.12.jar;C:\Users\Dell\.m2\repository\org\hibernate\orm\hibernate-core\6.5.2.Final\hibernate-core-6.5.2.Final.jar;C:\Users\Dell\.m2\repository\jakarta\persistence\jakarta.persistence-api\3.1.0\jakarta.persistence-api-3.1.0.jar;C:\Users\Dell\.m2\repository\jakarta\transaction\jakarta.transaction-api\2.0.1\jakarta.transaction-api-2.0.1.jar;C:\Users\Dell\.m2\repository\org\jboss\logging\jboss-logging\3.5.3.Final\jboss-logging-3.5.3.Final.jar;C:\Users\Dell\.m2\repository\org\hibernate\common\hibernate-commons-annotations\6.0.6.Final\hibernate-commons-annotations-6.0.6.Final.jar;C:\Users\Dell\.m2\repository\io\smallrye\jandex\3.1.2\jandex-3.1.2.jar;C:\Users\Dell\.m2\repository\com\fasterxml\classmate\1.7.0\classmate-1.7.0.jar;C:\Users\Dell\.m2\repository\net\bytebuddy\byte-buddy\1.14.19\byte-buddy-1.14.19.jar;C:\Users\Dell\.m2\repository\org\glassfish\jaxb\jaxb-runtime\4.0.5\jaxb-runtime-4.0.5.jar;C:\Users\Dell\.m2\repository\org\glassfish\jaxb\jaxb-core\4.0.5\jaxb-core-4.0.5.jar;C:\Users\Dell\.m2\repository\org\eclipse\angus\angus-activation\2.0.2\angus-activation-2.0.2.jar;C:\Users\Dell\.m2\repository\org\glassfish\jaxb\txw2\4.0.5\txw2-4.0.5.jar;C:\Users\Dell\.m2\repository\com\sun\istack\istack-commons-runtime\4.1.2\istack-commons-runtime-4.1.2.jar;C:\Users\Dell\.m2\repository\jakarta\inject\jakarta.inject-api\2.0.1\jakarta.inject-api-2.0.1.jar;C:\Users\Dell\.m2\repository\org\antlr\antlr4-runtime\4.13.0\antlr4-runtime-4.13.0.jar;C:\Users\Dell\.m2\repository\org\springframework\data\spring-data-jpa\3.3.3\spring-data-jpa-3.3.3.jar;C:\Users\Dell\.m2\repository\org\springframework\data\spring-data-commons\3.3.3\spring-data-commons-3.3.3.jar;C:\Users\Dell\.m2\repository\org\springframework\spring-orm\6.1.12\spring-orm-6.1.12.jar;C:\Users\Dell\.m2\repository\org\springframework\spring-tx\6.1.12\spring-tx-6.1.12.jar;C:\Users\Dell\.m2\repository\org\slf4j\slf4j-api\2.0.16\slf4j-api-2.0.16.jar;C:\Users\Dell\.m2\repository\org\springframework\spring-aspects\6.1.12\spring-aspects-6.1.12.jar;C:\Users\Dell\.m2\repository\org\springframework\boot\spring-boot-starter-validation\3.3.3\spring-boot-starter-validation-3.3.3.jar;C:\Users\Dell\.m2\repository\org\apache\tomcat\embed\tomcat-embed-el\10.1.28\tomcat-embed-el-10.1.28.jar;C:\Users\Dell\.m2\repository\org\hibernate\validator\hibernate-validator\8.0.1.Final\hibernate-validator-8.0.1.Final.jar;C:\Users\Dell\.m2\repository\jakarta\validation\jakarta.validation-api\3.0.2\jakarta.validation-api-3.0.2.jar;C:\Users\Dell\.m2\repository\org\springframework\boot\spring-boot-starter-security\3.3.3\spring-boot-starter-security-3.3.3.jar;C:\Users\Dell\.m2\repository\org\springframework\spring-aop\6.1.12\spring-aop-6.1.12.jar;C:\Users\Dell\.m2\repository\org\springframework\security\spring-security-config\6.3.3\spring-security-config-6.3.3.jar;C:\Users\Dell\.m2\repository\org\springframework\security\spring-security-core\6.3.3\spring-security-core-6.3.3.jar;C:\Users\Dell\.m2\repository\org\springframework\security\spring-security-crypto\6.3.3\spring-security-crypto-6.3.3.jar;C:\Users\Dell\.m2\repository\org\springframework\security\spring-security-web\6.3.3\spring-security-web-6.3.3.jar;C:\Users\Dell\.m2\repository\org\postgresql\postgresql\42.7.3\postgresql-42.7.3.jar;C:\Users\Dell\.m2\repository\org\checkerframework\checker-qual\3.42.0\checker-qual-3.42.0.jar;C:\Users\Dell\.m2\repository\com\h2database\h2\2.2.224\h2-2.2.224.jar;C:\Users\Dell\.m2\repository\org\apache\commons\commons-csv\1.10.0\commons-csv-1.10.0.jar;C:\Users\Dell\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.17.2\jackson-datatype-jsr310-2.17.2.jar;C:\Users\Dell\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.17.2\jackson-annotations-2.17.2.jar;C:\Users\Dell\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.17.2\jackson-core-2.17.2.jar;C:\Users\Dell\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.17.2\jackson-databind-2.17.2.jar;C:\Users\Dell\.m2\repository\org\springframework\boot\spring-boot-starter-test\3.3.3\spring-boot-starter-test-3.3.3.jar;C:\Users\Dell\.m2\repository\org\springframework\boot\spring-boot-test\3.3.3\spring-boot-test-3.3.3.jar;C:\Users\Dell\.m2\repository\org\springframework\boot\spring-boot-test-autoconfigure\3.3.3\spring-boot-test-autoconfigure-3.3.3.jar;C:\Users\Dell\.m2\repository\com\jayway\jsonpath\json-path\2.9.0\json-path-2.9.0.jar;C:\Users\Dell\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\4.0.2\jakarta.xml.bind-api-4.0.2.jar;C:\Users\Dell\.m2\repository\jakarta\activation\jakarta.activation-api\2.1.3\jakarta.activation-api-2.1.3.jar;C:\Users\Dell\.m2\repository\net\minidev\json-smart\2.5.1\json-smart-2.5.1.jar;C:\Users\Dell\.m2\repository\net\minidev\accessors-smart\2.5.1\accessors-smart-2.5.1.jar;C:\Users\Dell\.m2\repository\org\ow2\asm\asm\9.6\asm-9.6.jar;C:\Users\Dell\.m2\repository\org\assertj\assertj-core\3.25.3\assertj-core-3.25.3.jar;C:\Users\Dell\.m2\repository\org\awaitility\awaitility\4.2.2\awaitility-4.2.2.jar;C:\Users\Dell\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\Dell\.m2\repository\org\junit\jupiter\junit-jupiter\5.10.3\junit-jupiter-5.10.3.jar;C:\Users\Dell\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.3\junit-jupiter-api-5.10.3.jar;C:\Users\Dell\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\Dell\.m2\repository\org\junit\platform\junit-platform-commons\1.10.3\junit-platform-commons-1.10.3.jar;C:\Users\Dell\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\Dell\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.10.3\junit-jupiter-params-5.10.3.jar;C:\Users\Dell\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.3\junit-jupiter-engine-5.10.3.jar;C:\Users\Dell\.m2\repository\org\junit\platform\junit-platform-engine\1.10.3\junit-platform-engine-1.10.3.jar;C:\Users\Dell\.m2\repository\org\mockito\mockito-core\5.11.0\mockito-core-5.11.0.jar;C:\Users\Dell\.m2\repository\net\bytebuddy\byte-buddy-agent\1.14.19\byte-buddy-agent-1.14.19.jar;C:\Users\Dell\.m2\repository\org\objenesis\objenesis\3.3\objenesis-3.3.jar;C:\Users\Dell\.m2\repository\org\mockito\mockito-junit-jupiter\5.11.0\mockito-junit-jupiter-5.11.0.jar;C:\Users\Dell\.m2\repository\org\skyscreamer\jsonassert\1.5.3\jsonassert-1.5.3.jar;C:\Users\Dell\.m2\repository\com\vaadin\external\google\android-json\0.0.20131108.vaadin1\android-json-0.0.20131108.vaadin1.jar;C:\Users\Dell\.m2\repository\org\springframework\spring-core\6.1.12\spring-core-6.1.12.jar;C:\Users\Dell\.m2\repository\org\springframework\spring-jcl\6.1.12\spring-jcl-6.1.12.jar;C:\Users\Dell\.m2\repository\org\springframework\spring-test\6.1.12\spring-test-6.1.12.jar;C:\Users\Dell\.m2\repository\org\xmlunit\xmlunit-core\2.9.1\xmlunit-core-2.9.1.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="Asia/Calcutta"/>
+    <property name="org.jboss.logging.provider" value="slf4j"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="24"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="IN"/>
+    <property name="sun.boot.library.path" value="D:\Java\jdk-24\bin"/>
+    <property name="sun.java.command" value="C:\Users\Dell\AppData\Local\Temp\surefire14574218067852554813\surefirebooter-20260907011731606_3.jar C:\Users\Dell\AppData\Local\Temp\surefire14574218067852554813 2026-09-07T01-17-29_506-jvmRun1 surefire-20260907011731606_1tmp surefire_0-20260907011731606_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="E:\Desktop\ps-27\target\test-classes;E:\Desktop\ps-27\target\classes;C:\Users\Dell\.m2\repository\org\springframework\boot\spring-boot-starter-web\3.3.3\spring-boot-starter-web-3.3.3.jar;C:\Users\Dell\.m2\repository\org\springframework\boot\spring-boot-starter\3.3.3\spring-boot-starter-3.3.3.jar;C:\Users\Dell\.m2\repository\org\springframework\boot\spring-boot\3.3.3\spring-boot-3.3.3.jar;C:\Users\Dell\.m2\repository\org\springframework\boot\spring-boot-autoconfigure\3.3.3\spring-boot-autoconfigure-3.3.3.jar;C:\Users\Dell\.m2\repository\org\springframework\boot\spring-boot-starter-logging\3.3.3\spring-boot-starter-logging-3.3.3.jar;C:\Users\Dell\.m2\repository\ch\qos\logback\logback-classic\1.5.7\logback-classic-1.5.7.jar;C:\Users\Dell\.m2\repository\ch\qos\logback\logback-core\1.5.7\logback-core-1.5.7.jar;C:\Users\Dell\.m2\repository\org\apache\logging\log4j\log4j-to-slf4j\2.23.1\log4j-to-slf4j-2.23.1.jar;C:\Users\Dell\.m2\repository\org\apache\logging\log4j\log4j-api\2.23.1\log4j-api-2.23.1.jar;C:\Users\Dell\.m2\repository\org\slf4j\jul-to-slf4j\2.0.16\jul-to-slf4j-2.0.16.jar;C:\Users\Dell\.m2\repository\jakarta\annotation\jakarta.annotation-api\2.1.1\jakarta.annotation-api-2.1.1.jar;C:\Users\Dell\.m2\repository\org\yaml\snakeyaml\2.2\snakeyaml-2.2.jar;C:\Users\Dell\.m2\repository\org\springframework\boot\spring-boot-starter-json\3.3.3\spring-boot-starter-json-3.3.3.jar;C:\Users\Dell\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.17.2\jackson-datatype-jdk8-2.17.2.jar;C:\Users\Dell\.m2\repository\com\fasterxml\jackson\module\jackson-module-parameter-names\2.17.2\jackson-module-parameter-names-2.17.2.jar;C:\Users\Dell\.m2\repository\org\springframework\boot\spring-boot-starter-tomcat\3.3.3\spring-boot-starter-tomcat-3.3.3.jar;C:\Users\Dell\.m2\repository\org\apache\tomcat\embed\tomcat-embed-core\10.1.28\tomcat-embed-core-10.1.28.jar;C:\Users\Dell\.m2\repository\org\apache\tomcat\embed\tomcat-embed-websocket\10.1.28\tomcat-embed-websocket-10.1.28.jar;C:\Users\Dell\.m2\repository\org\springframework\spring-web\6.1.12\spring-web-6.1.12.jar;C:\Users\Dell\.m2\repository\org\springframework\spring-beans\6.1.12\spring-beans-6.1.12.jar;C:\Users\Dell\.m2\repository\io\micrometer\micrometer-observation\1.13.3\micrometer-observation-1.13.3.jar;C:\Users\Dell\.m2\repository\io\micrometer\micrometer-commons\1.13.3\micrometer-commons-1.13.3.jar;C:\Users\Dell\.m2\repository\org\springframework\spring-webmvc\6.1.12\spring-webmvc-6.1.12.jar;C:\Users\Dell\.m2\repository\org\springframework\spring-context\6.1.12\spring-context-6.1.12.jar;C:\Users\Dell\.m2\repository\org\springframework\spring-expression\6.1.12\spring-expression-6.1.12.jar;C:\Users\Dell\.m2\repository\org\springframework\boot\spring-boot-starter-data-jpa\3.3.3\spring-boot-starter-data-jpa-3.3.3.jar;C:\Users\Dell\.m2\repository\org\springframework\boot\spring-boot-starter-aop\3.3.3\spring-boot-starter-aop-3.3.3.jar;C:\Users\Dell\.m2\repository\org\aspectj\aspectjweaver\1.9.22.1\aspectjweaver-1.9.22.1.jar;C:\Users\Dell\.m2\repository\org\springframework\boot\spring-boot-starter-jdbc\3.3.3\spring-boot-starter-jdbc-3.3.3.jar;C:\Users\Dell\.m2\repository\com\zaxxer\HikariCP\5.1.0\HikariCP-5.1.0.jar;C:\Users\Dell\.m2\repository\org\springframework\spring-jdbc\6.1.12\spring-jdbc-6.1.12.jar;C:\Users\Dell\.m2\repository\org\hibernate\orm\hibernate-core\6.5.2.Final\hibernate-core-6.5.2.Final.jar;C:\Users\Dell\.m2\repository\jakarta\persistence\jakarta.persistence-api\3.1.0\jakarta.persistence-api-3.1.0.jar;C:\Users\Dell\.m2\repository\jakarta\transaction\jakarta.transaction-api\2.0.1\jakarta.transaction-api-2.0.1.jar;C:\Users\Dell\.m2\repository\org\jboss\logging\jboss-logging\3.5.3.Final\jboss-logging-3.5.3.Final.jar;C:\Users\Dell\.m2\repository\org\hibernate\common\hibernate-commons-annotations\6.0.6.Final\hibernate-commons-annotations-6.0.6.Final.jar;C:\Users\Dell\.m2\repository\io\smallrye\jandex\3.1.2\jandex-3.1.2.jar;C:\Users\Dell\.m2\repository\com\fasterxml\classmate\1.7.0\classmate-1.7.0.jar;C:\Users\Dell\.m2\repository\net\bytebuddy\byte-buddy\1.14.19\byte-buddy-1.14.19.jar;C:\Users\Dell\.m2\repository\org\glassfish\jaxb\jaxb-runtime\4.0.5\jaxb-runtime-4.0.5.jar;C:\Users\Dell\.m2\repository\org\glassfish\jaxb\jaxb-core\4.0.5\jaxb-core-4.0.5.jar;C:\Users\Dell\.m2\repository\org\eclipse\angus\angus-activation\2.0.2\angus-activation-2.0.2.jar;C:\Users\Dell\.m2\repository\org\glassfish\jaxb\txw2\4.0.5\txw2-4.0.5.jar;C:\Users\Dell\.m2\repository\com\sun\istack\istack-commons-runtime\4.1.2\istack-commons-runtime-4.1.2.jar;C:\Users\Dell\.m2\repository\jakarta\inject\jakarta.inject-api\2.0.1\jakarta.inject-api-2.0.1.jar;C:\Users\Dell\.m2\repository\org\antlr\antlr4-runtime\4.13.0\antlr4-runtime-4.13.0.jar;C:\Users\Dell\.m2\repository\org\springframework\data\spring-data-jpa\3.3.3\spring-data-jpa-3.3.3.jar;C:\Users\Dell\.m2\repository\org\springframework\data\spring-data-commons\3.3.3\spring-data-commons-3.3.3.jar;C:\Users\Dell\.m2\repository\org\springframework\spring-orm\6.1.12\spring-orm-6.1.12.jar;C:\Users\Dell\.m2\repository\org\springframework\spring-tx\6.1.12\spring-tx-6.1.12.jar;C:\Users\Dell\.m2\repository\org\slf4j\slf4j-api\2.0.16\slf4j-api-2.0.16.jar;C:\Users\Dell\.m2\repository\org\springframework\spring-aspects\6.1.12\spring-aspects-6.1.12.jar;C:\Users\Dell\.m2\repository\org\springframework\boot\spring-boot-starter-validation\3.3.3\spring-boot-starter-validation-3.3.3.jar;C:\Users\Dell\.m2\repository\org\apache\tomcat\embed\tomcat-embed-el\10.1.28\tomcat-embed-el-10.1.28.jar;C:\Users\Dell\.m2\repository\org\hibernate\validator\hibernate-validator\8.0.1.Final\hibernate-validator-8.0.1.Final.jar;C:\Users\Dell\.m2\repository\jakarta\validation\jakarta.validation-api\3.0.2\jakarta.validation-api-3.0.2.jar;C:\Users\Dell\.m2\repository\org\springframework\boot\spring-boot-starter-security\3.3.3\spring-boot-starter-security-3.3.3.jar;C:\Users\Dell\.m2\repository\org\springframework\spring-aop\6.1.12\spring-aop-6.1.12.jar;C:\Users\Dell\.m2\repository\org\springframework\security\spring-security-config\6.3.3\spring-security-config-6.3.3.jar;C:\Users\Dell\.m2\repository\org\springframework\security\spring-security-core\6.3.3\spring-security-core-6.3.3.jar;C:\Users\Dell\.m2\repository\org\springframework\security\spring-security-crypto\6.3.3\spring-security-crypto-6.3.3.jar;C:\Users\Dell\.m2\repository\org\springframework\security\spring-security-web\6.3.3\spring-security-web-6.3.3.jar;C:\Users\Dell\.m2\repository\org\postgresql\postgresql\42.7.3\postgresql-42.7.3.jar;C:\Users\Dell\.m2\repository\org\checkerframework\checker-qual\3.42.0\checker-qual-3.42.0.jar;C:\Users\Dell\.m2\repository\com\h2database\h2\2.2.224\h2-2.2.224.jar;C:\Users\Dell\.m2\repository\org\apache\commons\commons-csv\1.10.0\commons-csv-1.10.0.jar;C:\Users\Dell\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.17.2\jackson-datatype-jsr310-2.17.2.jar;C:\Users\Dell\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.17.2\jackson-annotations-2.17.2.jar;C:\Users\Dell\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.17.2\jackson-core-2.17.2.jar;C:\Users\Dell\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.17.2\jackson-databind-2.17.2.jar;C:\Users\Dell\.m2\repository\org\springframework\boot\spring-boot-starter-test\3.3.3\spring-boot-starter-test-3.3.3.jar;C:\Users\Dell\.m2\repository\org\springframework\boot\spring-boot-test\3.3.3\spring-boot-test-3.3.3.jar;C:\Users\Dell\.m2\repository\org\springframework\boot\spring-boot-test-autoconfigure\3.3.3\spring-boot-test-autoconfigure-3.3.3.jar;C:\Users\Dell\.m2\repository\com\jayway\jsonpath\json-path\2.9.0\json-path-2.9.0.jar;C:\Users\Dell\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\4.0.2\jakarta.xml.bind-api-4.0.2.jar;C:\Users\Dell\.m2\repository\jakarta\activation\jakarta.activation-api\2.1.3\jakarta.activation-api-2.1.3.jar;C:\Users\Dell\.m2\repository\net\minidev\json-smart\2.5.1\json-smart-2.5.1.jar;C:\Users\Dell\.m2\repository\net\minidev\accessors-smart\2.5.1\accessors-smart-2.5.1.jar;C:\Users\Dell\.m2\repository\org\ow2\asm\asm\9.6\asm-9.6.jar;C:\Users\Dell\.m2\repository\org\assertj\assertj-core\3.25.3\assertj-core-3.25.3.jar;C:\Users\Dell\.m2\repository\org\awaitility\awaitility\4.2.2\awaitility-4.2.2.jar;C:\Users\Dell\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\Dell\.m2\repository\org\junit\jupiter\junit-jupiter\5.10.3\junit-jupiter-5.10.3.jar;C:\Users\Dell\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.3\junit-jupiter-api-5.10.3.jar;C:\Users\Dell\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\Dell\.m2\repository\org\junit\platform\junit-platform-commons\1.10.3\junit-platform-commons-1.10.3.jar;C:\Users\Dell\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\Dell\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.10.3\junit-jupiter-params-5.10.3.jar;C:\Users\Dell\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.3\junit-jupiter-engine-5.10.3.jar;C:\Users\Dell\.m2\repository\org\junit\platform\junit-platform-engine\1.10.3\junit-platform-engine-1.10.3.jar;C:\Users\Dell\.m2\repository\org\mockito\mockito-core\5.11.0\mockito-core-5.11.0.jar;C:\Users\Dell\.m2\repository\net\bytebuddy\byte-buddy-agent\1.14.19\byte-buddy-agent-1.14.19.jar;C:\Users\Dell\.m2\repository\org\objenesis\objenesis\3.3\objenesis-3.3.jar;C:\Users\Dell\.m2\repository\org\mockito\mockito-junit-jupiter\5.11.0\mockito-junit-jupiter-5.11.0.jar;C:\Users\Dell\.m2\repository\org\skyscreamer\jsonassert\1.5.3\jsonassert-1.5.3.jar;C:\Users\Dell\.m2\repository\com\vaadin\external\google\android-json\0.0.20131108.vaadin1\android-json-0.0.20131108.vaadin1.jar;C:\Users\Dell\.m2\repository\org\springframework\spring-core\6.1.12\spring-core-6.1.12.jar;C:\Users\Dell\.m2\repository\org\springframework\spring-jcl\6.1.12\spring-jcl-6.1.12.jar;C:\Users\Dell\.m2\repository\org\springframework\spring-test\6.1.12\spring-test-6.1.12.jar;C:\Users\Dell\.m2\repository\org\xmlunit\xmlunit-core\2.9.1\xmlunit-core-2.9.1.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\Dell"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2025-04-15"/>
+    <property name="java.home" value="D:\Java\jdk-24"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="E:\Desktop\ps-27"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="FILE_LOG_CHARSET" value="UTF-8"/>
+    <property name="java.awt.headless" value="true"/>
+    <property name="surefire.real.class.path" value="C:\Users\Dell\AppData\Local\Temp\surefire14574218067852554813\surefirebooter-20260907011731606_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="24.0.1+9-30"/>
+    <property name="user.name" value="Dell"/>
+    <property name="stdout.encoding" value="Cp1252"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\Dell\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\Dell\AppData\Local\Temp\"/>
+    <property name="com.zaxxer.hikari.pool_number" value="1"/>
+    <property name="java.version" value="24.0.1"/>
+    <property name="user.dir" value="E:\Desktop\ps-27"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="PID" value="13456"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="CONSOLE_LOG_CHARSET" value="UTF-8"/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="D:\Java\jdk-24\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Users/Dell/.gemini/antigravity/bin;C:\Users\Dell\AppData\Roaming\Antigravity\bin;E:\installed files\Scripts\;E:\installed files\;C:\Program Files\Python313\Scripts\;C:\Program Files\Python313\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files\MySQL\MySQL Server 8.0\bin;E:\Download\Git\cmd;C:\Program Files\Cloudflare\Cloudflare WARP\;D:\download\;D:\Java\jdk-24\bin;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\Dell\.local\bin;C:\Users\Dell\AppData\Local\Programs\Python\Launcher\;C:\Users\Dell\AppData\Local\Microsoft\WindowsApps;C:\Users\Dell\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Dell\AppData\Local\JetBrains\IntelliJ IDEA Community Edition 2025.1.3\bin;;C:\Users\Dell\AppData\Roaming\npm;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="Cp1252"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="24.0.1+9-30"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="68.0"/>
+    <property name="LOGGED_APPLICATION_NAME" value="[block-optimizer] "/>
+  </properties>
+  <testcase name="contextLoads" classname="com.railway.blockoptimizer.BlockOptimizerApplicationTests" time="0.767">
+    <system-out><![CDATA[01:17:33.348 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.railway.blockoptimizer.BlockOptimizerApplicationTests]: BlockOptimizerApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+01:17:33.645 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.railway.blockoptimizer.BlockOptimizerApplication for test class com.railway.blockoptimizer.BlockOptimizerApplicationTests
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.3.3)
+
+2026-09-07T01:17:34.772+05:30  INFO 13456 --- [block-optimizer] [           main] c.r.b.BlockOptimizerApplicationTests     : Starting BlockOptimizerApplicationTests using Java 24.0.1 with PID 13456 (started by Dell in E:\Desktop\ps-27)
+2026-09-07T01:17:34.774+05:30 DEBUG 13456 --- [block-optimizer] [           main] c.r.b.BlockOptimizerApplicationTests     : Running with Spring Boot v3.3.3, Spring v6.1.12
+2026-09-07T01:17:34.775+05:30  INFO 13456 --- [block-optimizer] [           main] c.r.b.BlockOptimizerApplicationTests     : The following 1 profile is active: "local"
+2026-09-07T01:17:37.663+05:30  INFO 13456 --- [block-optimizer] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-09-07T01:17:37.857+05:30  INFO 13456 --- [block-optimizer] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 179 ms. Found 15 JPA repository interfaces.
+2026-09-07T01:17:38.601+05:30  INFO 13456 --- [block-optimizer] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-09-07T01:17:38.988+05:30  INFO 13456 --- [block-optimizer] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:railway_db user=SA
+2026-09-07T01:17:38.990+05:30  INFO 13456 --- [block-optimizer] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-09-07T01:17:39.284+05:30  INFO 13456 --- [block-optimizer] [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-09-07T01:17:39.418+05:30  INFO 13456 --- [block-optimizer] [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2026-09-07T01:17:39.501+05:30  INFO 13456 --- [block-optimizer] [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-09-07T01:17:40.224+05:30  INFO 13456 --- [block-optimizer] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-09-07T01:17:40.345+05:30  WARN 13456 --- [block-optimizer] [           main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-09-07T01:17:42.235+05:30  INFO 13456 --- [block-optimizer] [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-09-07T01:17:42.303+05:30 DEBUG 13456 --- [block-optimizer] [           main] org.hibernate.SQL                        : 
+    alter table if exists audit_logs 
+       alter column new_values set data type TEXT
+Hibernate: 
+    alter table if exists audit_logs 
+       alter column new_values set data type TEXT
+2026-09-07T01:17:42.305+05:30 DEBUG 13456 --- [block-optimizer] [           main] org.hibernate.SQL                        : 
+    alter table if exists audit_logs 
+       alter column old_values set data type TEXT
+Hibernate: 
+    alter table if exists audit_logs 
+       alter column old_values set data type TEXT
+2026-09-07T01:17:42.307+05:30 DEBUG 13456 --- [block-optimizer] [           main] org.hibernate.SQL                        : 
+    alter table if exists block_requests 
+       alter column remarks set data type TEXT
+Hibernate: 
+    alter table if exists block_requests 
+       alter column remarks set data type TEXT
+2026-09-07T01:17:42.308+05:30 DEBUG 13456 --- [block-optimizer] [           main] org.hibernate.SQL                        : 
+    alter table if exists conflicts 
+       alter column details set data type TEXT
+Hibernate: 
+    alter table if exists conflicts 
+       alter column details set data type TEXT
+2026-09-07T01:17:42.309+05:30 DEBUG 13456 --- [block-optimizer] [           main] org.hibernate.SQL                        : 
+    alter table if exists constraints 
+       alter column description set data type TEXT
+Hibernate: 
+    alter table if exists constraints 
+       alter column description set data type TEXT
+2026-09-07T01:17:42.311+05:30 DEBUG 13456 --- [block-optimizer] [           main] org.hibernate.SQL                        : 
+    alter table if exists constraints 
+       alter column parameters set data type TEXT
+Hibernate: 
+    alter table if exists constraints 
+       alter column parameters set data type TEXT
+2026-09-07T01:17:42.318+05:30 DEBUG 13456 --- [block-optimizer] [           main] org.hibernate.SQL                        : 
+    alter table if exists departments 
+       alter column description set data type TEXT
+Hibernate: 
+    alter table if exists departments 
+       alter column description set data type TEXT
+2026-09-07T01:17:42.319+05:30 DEBUG 13456 --- [block-optimizer] [           main] org.hibernate.SQL                        : 
+    alter table if exists integration_sync_logs 
+       alter column error_details set data type TEXT
+Hibernate: 
+    alter table if exists integration_sync_logs 
+       alter column error_details set data type TEXT
+2026-09-07T01:17:42.320+05:30 DEBUG 13456 --- [block-optimizer] [           main] org.hibernate.SQL                        : 
+    alter table if exists maintenance_tasks 
+       alter column description set data type TEXT
+Hibernate: 
+    alter table if exists maintenance_tasks 
+       alter column description set data type TEXT
+2026-09-07T01:17:42.321+05:30 DEBUG 13456 --- [block-optimizer] [           main] org.hibernate.SQL                        : 
+    alter table if exists optimization_results 
+       alter column metrics set data type TEXT
+Hibernate: 
+    alter table if exists optimization_results 
+       alter column metrics set data type TEXT
+2026-09-07T01:17:42.322+05:30 DEBUG 13456 --- [block-optimizer] [           main] org.hibernate.SQL                        : 
+    alter table if exists optimization_runs 
+       alter column parameters set data type TEXT
+Hibernate: 
+    alter table if exists optimization_runs 
+       alter column parameters set data type TEXT
+2026-09-07T01:17:42.344+05:30  INFO 13456 --- [block-optimizer] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-09-07T01:17:43.097+05:30  INFO 13456 --- [block-optimizer] [           main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-09-07T01:17:44.364+05:30  WARN 13456 --- [block-optimizer] [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-09-07T01:17:44.406+05:30  WARN 13456 --- [block-optimizer] [           main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 4658e733-2e23-4772-b614-b64ef2a2eb4c
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-09-07T01:17:44.466+05:30  INFO 13456 --- [block-optimizer] [           main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-09-07T01:17:45.645+05:30  INFO 13456 --- [block-optimizer] [           main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:railway_db'
+2026-09-07T01:17:45.754+05:30  INFO 13456 --- [block-optimizer] [           main] c.r.b.BlockOptimizerApplicationTests     : Started BlockOptimizerApplicationTests in 11.689 seconds (process running for 13.957)
+2026-09-07T01:17:45.896+05:30 DEBUG 13456 --- [block-optimizer] [           main] org.hibernate.SQL                        : 
+    select
+        count(*) 
+    from
+        departments d1_0
+Hibernate: 
+    select
+        count(*) 
+    from
+        departments d1_0
+2026-09-07T01:17:45.905+05:30  INFO 13456 --- [block-optimizer] [           main] c.r.b.seeder.DataSeederRunner            : Seeding synthetic Indian Railway sample data for PS27 Part 1 Data Layer...
+2026-09-07T01:17:46.040+05:30 DEBUG 13456 --- [block-optimizer] [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        departments
+        (code, created_at, description, name, id) 
+    values
+        (?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        departments
+        (code, created_at, description, name, id) 
+    values
+        (?, ?, ?, ?, ?)
+2026-09-07T01:17:46.056+05:30 DEBUG 13456 --- [block-optimizer] [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        departments
+        (code, created_at, description, name, id) 
+    values
+        (?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        departments
+        (code, created_at, description, name, id) 
+    values
+        (?, ?, ?, ?, ?)
+2026-09-07T01:17:46.057+05:30 DEBUG 13456 --- [block-optimizer] [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        departments
+        (code, created_at, description, name, id) 
+    values
+        (?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        departments
+        (code, created_at, description, name, id) 
+    values
+        (?, ?, ?, ?, ?)
+2026-09-07T01:17:46.059+05:30 DEBUG 13456 --- [block-optimizer] [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        departments
+        (code, created_at, description, name, id) 
+    values
+        (?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        departments
+        (code, created_at, description, name, id) 
+    values
+        (?, ?, ?, ?, ?)
+2026-09-07T01:17:46.061+05:30 DEBUG 13456 --- [block-optimizer] [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        users
+        (created_at, department_id, email, full_name, password_hash, role, updated_at, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        users
+        (created_at, department_id, email, full_name, password_hash, role, updated_at, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+2026-09-07T01:17:46.064+05:30 DEBUG 13456 --- [block-optimizer] [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        users
+        (created_at, department_id, email, full_name, password_hash, role, updated_at, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        users
+        (created_at, department_id, email, full_name, password_hash, role, updated_at, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+2026-09-07T01:17:46.065+05:30 DEBUG 13456 --- [block-optimizer] [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        users
+        (created_at, department_id, email, full_name, password_hash, role, updated_at, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        users
+        (created_at, department_id, email, full_name, password_hash, role, updated_at, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+2026-09-07T01:17:46.066+05:30 DEBUG 13456 --- [block-optimizer] [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        users
+        (created_at, department_id, email, full_name, password_hash, role, updated_at, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        users
+        (created_at, department_id, email, full_name, password_hash, role, updated_at, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+2026-09-07T01:17:46.068+05:30 DEBUG 13456 --- [block-optimizer] [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        corridors
+        (code, created_at, destination_station, length_km, max_speed_kmh, name, number_of_tracks, source_station, status, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        corridors
+        (code, created_at, destination_station, length_km, max_speed_kmh, name, number_of_tracks, source_station, status, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2026-09-07T01:17:46.070+05:30 DEBUG 13456 --- [block-optimizer] [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        corridors
+        (code, created_at, destination_station, length_km, max_speed_kmh, name, number_of_tracks, source_station, status, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        corridors
+        (code, created_at, destination_station, length_km, max_speed_kmh, name, number_of_tracks, source_station, status, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2026-09-07T01:17:46.071+05:30 DEBUG 13456 --- [block-optimizer] [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        assets
+        (asset_code, asset_type, corridor_id, created_at, location_km_end, location_km_start, status, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        assets
+        (asset_code, asset_type, corridor_id, created_at, location_km_end, location_km_start, status, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+2026-09-07T01:17:46.072+05:30 DEBUG 13456 --- [block-optimizer] [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        assets
+        (asset_code, asset_type, corridor_id, created_at, location_km_end, location_km_start, status, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        assets
+        (asset_code, asset_type, corridor_id, created_at, location_km_end, location_km_start, status, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+2026-09-07T01:17:46.073+05:30 DEBUG 13456 --- [block-optimizer] [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        assets
+        (asset_code, asset_type, corridor_id, created_at, location_km_end, location_km_start, status, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        assets
+        (asset_code, asset_type, corridor_id, created_at, location_km_end, location_km_start, status, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+2026-09-07T01:17:46.074+05:30 DEBUG 13456 --- [block-optimizer] [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        maintenance_tasks
+        (asset_id, created_at, department_id, description, estimated_duration_minutes, periodic_frequency, priority, required_block_type, source_system, status, task_type, title, updated_at, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        maintenance_tasks
+        (asset_id, created_at, department_id, description, estimated_duration_minutes, periodic_frequency, priority, required_block_type, source_system, status, task_type, title, updated_at, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2026-09-07T01:17:46.075+05:30 DEBUG 13456 --- [block-optimizer] [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        maintenance_tasks
+        (asset_id, created_at, department_id, description, estimated_duration_minutes, periodic_frequency, priority, required_block_type, source_system, status, task_type, title, updated_at, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        maintenance_tasks
+        (asset_id, created_at, department_id, description, estimated_duration_minutes, periodic_frequency, priority, required_block_type, source_system, status, task_type, title, updated_at, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2026-09-07T01:17:46.077+05:30 DEBUG 13456 --- [block-optimizer] [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        trains
+        (created_at, destination_station, origin_station, priority_level, source_system, train_name, train_number, train_type, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        trains
+        (created_at, destination_station, origin_station, priority_level, source_system, train_name, train_number, train_type, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+2026-09-07T01:17:46.078+05:30 DEBUG 13456 --- [block-optimizer] [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        trains
+        (created_at, destination_station, origin_station, priority_level, source_system, train_name, train_number, train_type, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        trains
+        (created_at, destination_station, origin_station, priority_level, source_system, train_name, train_number, train_type, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+2026-09-07T01:17:46.079+05:30 DEBUG 13456 --- [block-optimizer] [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        trains
+        (created_at, destination_station, origin_station, priority_level, source_system, train_name, train_number, train_type, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        trains
+        (created_at, destination_station, origin_station, priority_level, source_system, train_name, train_number, train_type, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+2026-09-07T01:17:46.080+05:30 DEBUG 13456 --- [block-optimizer] [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        train_schedules
+        (arrival_time, corridor_id, created_at, day_of_week, departure_time, end_km, frequency_pattern, start_km, train_id, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        train_schedules
+        (arrival_time, corridor_id, created_at, day_of_week, departure_time, end_km, frequency_pattern, start_km, train_id, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2026-09-07T01:17:46.081+05:30 DEBUG 13456 --- [block-optimizer] [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        train_schedules
+        (arrival_time, corridor_id, created_at, day_of_week, departure_time, end_km, frequency_pattern, start_km, train_id, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        train_schedules
+        (arrival_time, corridor_id, created_at, day_of_week, departure_time, end_km, frequency_pattern, start_km, train_id, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2026-09-07T01:17:46.082+05:30 DEBUG 13456 --- [block-optimizer] [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        block_requests
+        (asset_id, block_type, corridor_id, created_at, department_id, duration_minutes, end_km, end_time, maintenance_task_id, remarks, request_number, requested_by_user_id, start_km, start_time, status, updated_at, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        block_requests
+        (asset_id, block_type, corridor_id, created_at, department_id, duration_minutes, end_km, end_time, maintenance_task_id, remarks, request_number, requested_by_user_id, start_km, start_time, status, updated_at, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2026-09-07T01:17:46.084+05:30 DEBUG 13456 --- [block-optimizer] [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        block_requests
+        (asset_id, block_type, corridor_id, created_at, department_id, duration_minutes, end_km, end_time, maintenance_task_id, remarks, request_number, requested_by_user_id, start_km, start_time, status, updated_at, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        block_requests
+        (asset_id, block_type, corridor_id, created_at, department_id, duration_minutes, end_km, end_time, maintenance_task_id, remarks, request_number, requested_by_user_id, start_km, start_time, status, updated_at, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2026-09-07T01:17:46.095+05:30 DEBUG 13456 --- [block-optimizer] [           main] org.hibernate.SQL                        : 
+    select
+        ts1_0.id,
+        ts1_0.arrival_time,
+        ts1_0.corridor_id,
+        ts1_0.created_at,
+        ts1_0.day_of_week,
+        ts1_0.departure_time,
+        ts1_0.end_km,
+        ts1_0.frequency_pattern,
+        ts1_0.start_km,
+        ts1_0.train_id 
+    from
+        train_schedules ts1_0 
+    where
+        ts1_0.corridor_id=? 
+        and ts1_0.arrival_time<=? 
+        and ts1_0.departure_time>=?
+Hibernate: 
+    select
+        ts1_0.id,
+        ts1_0.arrival_time,
+        ts1_0.corridor_id,
+        ts1_0.created_at,
+        ts1_0.day_of_week,
+        ts1_0.departure_time,
+        ts1_0.end_km,
+        ts1_0.frequency_pattern,
+        ts1_0.start_km,
+        ts1_0.train_id 
+    from
+        train_schedules ts1_0 
+    where
+        ts1_0.corridor_id=? 
+        and ts1_0.arrival_time<=? 
+        and ts1_0.departure_time>=?
+2026-09-07T01:17:46.107+05:30 DEBUG 13456 --- [block-optimizer] [           main] org.hibernate.SQL                        : 
+    select
+        br1_0.id,
+        br1_0.asset_id,
+        br1_0.block_type,
+        br1_0.corridor_id,
+        br1_0.created_at,
+        br1_0.department_id,
+        br1_0.duration_minutes,
+        br1_0.end_km,
+        br1_0.end_time,
+        br1_0.maintenance_task_id,
+        br1_0.remarks,
+        br1_0.request_number,
+        br1_0.requested_by_user_id,
+        br1_0.start_km,
+        br1_0.start_time,
+        br1_0.status,
+        br1_0.updated_at 
+    from
+        block_requests br1_0 
+    where
+        br1_0.corridor_id=? 
+        and br1_0.id<>? 
+        and br1_0.start_time<=? 
+        and br1_0.end_time>=?
+Hibernate: 
+    select
+        br1_0.id,
+        br1_0.asset_id,
+        br1_0.block_type,
+        br1_0.corridor_id,
+        br1_0.created_at,
+        br1_0.department_id,
+        br1_0.duration_minutes,
+        br1_0.end_km,
+        br1_0.end_time,
+        br1_0.maintenance_task_id,
+        br1_0.remarks,
+        br1_0.request_number,
+        br1_0.requested_by_user_id,
+        br1_0.start_km,
+        br1_0.start_time,
+        br1_0.status,
+        br1_0.updated_at 
+    from
+        block_requests br1_0 
+    where
+        br1_0.corridor_id=? 
+        and br1_0.id<>? 
+        and br1_0.start_time<=? 
+        and br1_0.end_time>=?
+2026-09-07T01:17:46.115+05:30 DEBUG 13456 --- [block-optimizer] [           main] org.hibernate.SQL                        : 
+    select
+        ts1_0.id,
+        ts1_0.arrival_time,
+        ts1_0.corridor_id,
+        ts1_0.created_at,
+        ts1_0.day_of_week,
+        ts1_0.departure_time,
+        ts1_0.end_km,
+        ts1_0.frequency_pattern,
+        ts1_0.start_km,
+        ts1_0.train_id 
+    from
+        train_schedules ts1_0 
+    where
+        ts1_0.corridor_id=? 
+        and ts1_0.arrival_time<=? 
+        and ts1_0.departure_time>=?
+Hibernate: 
+    select
+        ts1_0.id,
+        ts1_0.arrival_time,
+        ts1_0.corridor_id,
+        ts1_0.created_at,
+        ts1_0.day_of_week,
+        ts1_0.departure_time,
+        ts1_0.end_km,
+        ts1_0.frequency_pattern,
+        ts1_0.start_km,
+        ts1_0.train_id 
+    from
+        train_schedules ts1_0 
+    where
+        ts1_0.corridor_id=? 
+        and ts1_0.arrival_time<=? 
+        and ts1_0.departure_time>=?
+2026-09-07T01:17:46.118+05:30 DEBUG 13456 --- [block-optimizer] [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        conflicts
+        (block_request_id, conflict_type, conflicting_block_request_id, conflicting_train_schedule_id, created_at, details, severity, status, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        conflicts
+        (block_request_id, conflict_type, conflicting_block_request_id, conflicting_train_schedule_id, created_at, details, severity, status, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+2026-09-07T01:17:46.125+05:30 DEBUG 13456 --- [block-optimizer] [           main] org.hibernate.SQL                        : 
+    update
+        block_requests 
+    set
+        asset_id=?,
+        block_type=?,
+        corridor_id=?,
+        department_id=?,
+        duration_minutes=?,
+        end_km=?,
+        end_time=?,
+        maintenance_task_id=?,
+        remarks=?,
+        request_number=?,
+        requested_by_user_id=?,
+        start_km=?,
+        start_time=?,
+        status=?,
+        updated_at=? 
+    where
+        id=?
+Hibernate: 
+    update
+        block_requests 
+    set
+        asset_id=?,
+        block_type=?,
+        corridor_id=?,
+        department_id=?,
+        duration_minutes=?,
+        end_km=?,
+        end_time=?,
+        maintenance_task_id=?,
+        remarks=?,
+        request_number=?,
+        requested_by_user_id=?,
+        start_km=?,
+        start_time=?,
+        status=?,
+        updated_at=? 
+    where
+        id=?
+2026-09-07T01:17:46.138+05:30 DEBUG 13456 --- [block-optimizer] [           main] org.hibernate.SQL                        : 
+    select
+        br1_0.id,
+        br1_0.asset_id,
+        br1_0.block_type,
+        br1_0.corridor_id,
+        br1_0.created_at,
+        br1_0.department_id,
+        br1_0.duration_minutes,
+        br1_0.end_km,
+        br1_0.end_time,
+        br1_0.maintenance_task_id,
+        br1_0.remarks,
+        br1_0.request_number,
+        br1_0.requested_by_user_id,
+        br1_0.start_km,
+        br1_0.start_time,
+        br1_0.status,
+        br1_0.updated_at 
+    from
+        block_requests br1_0 
+    where
+        br1_0.corridor_id=? 
+        and br1_0.id<>? 
+        and br1_0.start_time<=? 
+        and br1_0.end_time>=?
+Hibernate: 
+    select
+        br1_0.id,
+        br1_0.asset_id,
+        br1_0.block_type,
+        br1_0.corridor_id,
+        br1_0.created_at,
+        br1_0.department_id,
+        br1_0.duration_minutes,
+        br1_0.end_km,
+        br1_0.end_time,
+        br1_0.maintenance_task_id,
+        br1_0.remarks,
+        br1_0.request_number,
+        br1_0.requested_by_user_id,
+        br1_0.start_km,
+        br1_0.start_time,
+        br1_0.status,
+        br1_0.updated_at 
+    from
+        block_requests br1_0 
+    where
+        br1_0.corridor_id=? 
+        and br1_0.id<>? 
+        and br1_0.start_time<=? 
+        and br1_0.end_time>=?
+2026-09-07T01:17:46.142+05:30  INFO 13456 --- [block-optimizer] [           main] c.r.b.seeder.DataSeederRunner            : Synthetic sample railway data seeded successfully!
+2026-09-07T01:17:46.146+05:30 DEBUG 13456 --- [block-optimizer] [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        block_plans
+        (approved_by_user_id, created_at, created_by_user_id, end_date, horizon_type, plan_name, start_date, status, updated_at, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        block_plans
+        (approved_by_user_id, created_at, created_by_user_id, end_date, horizon_type, plan_name, start_date, status, updated_at, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+]]></system-out>
+    <system-err><![CDATA[WARNING: A Java agent has been loaded dynamically (C:\Users\Dell\.m2\repository\net\bytebuddy\byte-buddy-agent\1.14.19\byte-buddy-agent-1.14.19.jar)
+WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+WARNING: Dynamic loading of agents will be disallowed by default in a future release
+]]></system-err>
+  </testcase>
+</testsuite>
